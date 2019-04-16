@@ -100,7 +100,7 @@ class Cell:
         self.pos = pos
 
 
-if __name__ == "__main__":
+def main():
     game = Game(4)
     while game.result is None:
         flag = False
@@ -140,3 +140,7 @@ if __name__ == "__main__":
             game.update_game_result_if_victory()
 
     print(game.result)
+
+
+if __name__ == "__main__":
+    main()
